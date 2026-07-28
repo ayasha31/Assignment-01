@@ -517,3 +517,48 @@ header{
     }
 }
 
+footer{
+    background:#111827;
+    color:#D1D5DB;
+    padding:25px 8%;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.footer-container p{
+    font-size:14px;
+    color:#9CA3AF;
+}
+
+.footer-links{
+    display:flex;
+    gap:25px;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:#9CA3AF;
+    font-size:14px;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#fff;
+}
+
+@media(max-width:768px){
+    .footer-container{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+
+    .footer-links{
+        gap:20px;
+    }
+}

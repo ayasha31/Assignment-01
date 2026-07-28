@@ -428,3 +428,92 @@ header{
     }
 }
 
+.why-attend{
+    position:relative;
+    background:url("images/why-attend.jpg") center/cover no-repeat;
+    padding:120px 8%;
+    text-align:center;
+    color:#fff;
+}
+
+.why-attend::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(17,24,39,.82);
+}
+
+.why-content{
+    position:relative;
+    max-width:1100px;
+    margin:auto;
+    z-index:1;
+}
+
+.why-content h2{
+    font-size:48px;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.why-content p{
+    font-size:18px;
+    color:#E5E7EB;
+    line-height:1.8;
+    max-width:750px;
+    margin:0 auto 60px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.feature{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:16px;
+    padding:35px 20px;
+    transition:.3s;
+}
+
+.feature:hover{
+    transform:translateY(-8px);
+    background:rgba(37,99,235,.18);
+    border-color:#2563EB;
+}
+
+.feature h3{
+    font-size:42px;
+    color:#fff;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.feature p{
+    margin:0;
+    color:#D1D5DB;
+    font-size:16px;
+}
+
+@media(max-width:900px){
+    .features{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .why-content h2{
+        font-size:36px;
+    }
+
+    .why-content p{
+        font-size:16px;
+    }
+}
+
